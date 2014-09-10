@@ -27,6 +27,27 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.3-1102-jdbc41</version>
 		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.12</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-servlet</artifactId>
+			<version>1.12</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.18.1</version>
+		</dependency>
 
 	</dependencies>
 	<build>
@@ -55,6 +76,7 @@
 						<artifactId>postgresql</artifactId>
 						<version>8.4-702.jdbc4</version>
 					</dependency>
+
 				</dependencies>
 
 				<!-- Specify the plugin configuration. The configuration format is the 
@@ -79,7 +101,7 @@
 							<inputSchema>agenda</inputSchema>
 						</database>
 						<target>
-							<packageName>org.untref.agendauniversitaria</packageName>
+							<packageName>org.untref.agendauniversitaria.model</packageName>
 							<directory>src/main/java</directory>
 						</target>
 						<generate>
